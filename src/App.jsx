@@ -1,0 +1,67 @@
+import { useState } from 'react'
+import './App.css'
+
+import Cart from './component/Cart'
+import Products from './component/Products'
+import Navbar from './component/NavBar'
+
+// fetch products
+const getProducts = async () => {
+  const res = await fetch("/products.json")
+  return res.json()
+}
+
+const productPromise = getProducts()
+
+function App() {
+
+  const [activeTab, setActiveTab] = useState("product")
+  const [carts, setCarts] = useState([])
+
+  return (
+    <>
+      {/* ✅ Navbar */}
+      <Navbar carts={carts} setActiveTab={setActiveTab} />
+
+      {/* Toggle */}
+      <div className="flex justify-center gap-4 my-10">
+        <button
+          onClick={() => setActiveTab("product")}
+          className={`px-6 py-2 rounded-full ${
+            activeTab === "product"
+              ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-white"
+              : "bg-gray-200"
+          }`}
+        >
+          Products
+        </button>
+
+        <button
+          onClick={() => setActiveTab("cart")}
+          className={`px-6 py-2 rounded-full ${
+            activeTab === "cart"
+              ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-white"
+              : "bg-gray-200"
+          }`}
+        >
+          Cart ({carts.length})
+        </button>
+      </div>
+
+      {/* Render */}
+      {activeTab === "product" && (
+        <Products
+          productPromise={productPromise}
+          carts={carts}
+          setCarts={setCarts}
+        />
+      )}
+
+      {activeTab === "cart" && (
+        <Cart carts={carts} setCarts={setCarts} />
+      )}
+    </>
+  )
+}
+
+export default App
