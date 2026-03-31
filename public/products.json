@@ -12,7 +12,7 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "icon": "https://img.icons8.com/fluency/96/artificial-intelligence.png"
+    "icon": "/writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "icon": "https://img.icons8.com/fluency/96/design.png"
+    "icon": "/design-tool.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Commercial use",
       "No attribution"
     ],
-    "icon": "https://img.icons8.com/fluency/96/image.png"
+    "icon": "/Group.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "API access",
       "Custom workflows"
     ],
-    "icon": "https://img.icons8.com/fluency/96/automation.png"
+    "icon": "operation.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "https://img.icons8.com/fluency/96/resume.png"
+    "icon": "portfolio.png"
   },
   {
     "id": 6,
@@ -87,6 +87,6 @@
       "Scheduler included",
       "Analytics dashboard"
     ],
-    "icon": "https://img.icons8.com/fluency/96/combo-chart.png"
+    "icon": "social-media.png"
   }
 ]

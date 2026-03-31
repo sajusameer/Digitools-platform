@@ -7,14 +7,14 @@ const Navbar = ({ carts, setActiveTab }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div className='w-full bg-white border-b border-gray-200 sticky top-0 z-50'>
 
-      <div className="px-6 md:px-12 py-4 flex items-center justify-between">
+      <div className='px-6 md:px-12 py-4 flex items-center justify-between'>
 
       {/* logo */}
         <div
           onClick={() => setActiveTab("product")}
-         className="items-center"
+         className='items-center'
         >
           <img className="w-30" src="/logo.png" alt="" />
         </div>

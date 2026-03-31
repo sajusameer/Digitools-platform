@@ -27,14 +27,14 @@ function App() {
 
       <Banner/>
       <Rating/>
-      {/* Toggle */}
+   {/* tab button */}
       <div className="flex justify-center gap-4 my-10">
         <button
           onClick={() => setActiveTab("product")}
           className={`px-6 py-2 rounded-full ${
             activeTab === "product"
               ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-white"
-              : "bg-gray-200"
+              : "bg-gray-50"
           }`}
         >
           Products
@@ -45,7 +45,7 @@ function App() {
           className={`px-6 py-2 rounded-full ${
             activeTab === "cart"
               ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-white"
-              : "bg-gray-200"
+              : "bg-gray-50"
           }`}
         >
           Cart ({carts.length})

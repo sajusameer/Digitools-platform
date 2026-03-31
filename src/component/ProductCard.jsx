@@ -1,3 +1,4 @@
+import { Check } from 'lucide-react';
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -17,7 +18,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
     toast.success("Added to cart");
   };
 
-  // 🎨 badge color
+  
   const getBadgeColor = (tag) => {
     if (tag === "Best Seller") return "bg-yellow-100 text-yellow-600";
     if (tag === "Popular") return "bg-purple-100 text-purple-600";
@@ -25,41 +26,49 @@ const ProductCard = ({ product, carts, setCarts }) => {
   };
 
   return (
-    <div className='bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition flex flex-col h-full relative'>
+    <div className='bg-white border border-gray-200 rounded-3xl p-6 shadow-lg hover:shadow-md transition flex flex-col h-full relative'>
 
-      {/* 🔖 Badge */}
+      
       <span className={`absolute top-4 right-4 px-3 py-1 text-xs rounded-full ${getBadgeColor(product.tag)}`}>
         {product.tag}
       </span>
 
-      {/* 🔹 Icon */}
-      <img className='w-12 h-12 mb-4' src={product.icon} alt="" />
+     
+      <div className='w-14 h-14 rounded-full bg-white border border-gray-200 flex items-center justify-center  mb-4'>
+       <img 
+        className='w-8 h-8 object-contain' 
+         src={product.icon} 
+        alt="" 
+      />
+     </div>
 
-      {/* 🔹 Title */}
+   
       <h2 className='text-xl font-semibold'>{product.name}</h2>
 
-      {/* 🔹 Description */}
       <p className='text-gray-500 text-sm mt-2'>{product.description}</p>
 
-      {/* 🔹 Price */}
+     
       <div className='text-lg font-bold mt-3'>
         ${product.price}
         <span className='text-gray-400 text-sm'>/{product.period}</span>
       </div>
 
-      {/* 🔹 Features */}
-      <ul className='mt-4 space-y-2 text-sm text-gray-600'>
-        {product.features.map((f, i) => (
-          <li key={i}>✔ {f}</li>
+     
+      <ul className='mt-4 space-y-2 text-sm text-gray-600 mb-2'>
+             {product.features.map((f, i) => (
+            <li key={i} className='flex items-center gap-2'>
+            <Check size={18} className='text-green-500 mt-0.5' />
+            <span>{f}</span>
+            </li>
         ))}
-      </ul>
+        </ul>
 
-      {/* 🔘 Button */}
+      
       <button
         onClick={handleAddToCart}
         className='mt-auto py-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white'
       >
-        {added ? "Added ✓" : "Buy Now"}
+        {added ? "Added to Cart" : "Buy Now"}
       </button>
     </div>
   );

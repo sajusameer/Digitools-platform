@@ -30,24 +30,27 @@ const Cart = ({ carts, setCarts }) => {
           </div>
         ) : (
           <>
-            {/* 🧾 Items */}
+            
             <div className='space-y-4'>
               {
                 carts.map(item => (
-                  <div key={item.id} className='flex justify-between items-center border p-4 rounded-xl'>
+                  <div key={item.id} className='flex justify-between items-center bg-gray-100 p-4 rounded-xl'>
 
-                    <div className='flex items-center gap-3'>
-                      <img src={item.icon} className='w-12' />
-                      <h3 className='font-semibold'>{item.name}</h3>
-                    </div>
-
+                    <div className='flex items-center gap-4'>
+                      <img src={item.icon} className='w-8' />
+                     <div>
+                         <h3 className='font-semibold'>{item.name}</h3>
                     <div className='font-bold'>
                       ${item.price}
                     </div>
+                     </div>
+                    </div>
+
+                  
 
                     <button
                       onClick={() => handleRemove(item.id)}
-                      className='btn btn-error btn-sm'
+                      className='btn btn-ghost text-red-700'
                     >
                       Remove
                     </button>
@@ -57,16 +60,17 @@ const Cart = ({ carts, setCarts }) => {
               }
             </div>
 
-            {/* 💰 Total */}
-            <div className='flex justify-between mt-6 bg-black text-white p-4 rounded-xl text-xl font-bold'>
-              <span>Total</span>
-              <span>${totalPrice}</span>
+           {/* total */}
+            <div className='flex justify-between mt-6 bg-gray-100 p-4 rounded-xl text-xl '>
+              <span className='font-semibold'>Total</span>
+              <span className='font-bold'>${totalPrice}</span>
             </div>
 
-            {/* 💳 Checkout */}
+            {/* checkout */}
             <button
               onClick={handleCheckout}
-              className='w-full mt-5 py-3 rounded-xl bg-purple-600 text-white text-lg'
+              className='w-full mt-5 py-3 rounded-xl
+               bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-lg'
             >
               Proceed to Checkout
             </button>
