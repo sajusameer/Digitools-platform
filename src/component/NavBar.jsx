@@ -129,5 +129,5 @@ const Navbar = ({ carts, setActiveTab }) => {
 export default Navbar;
 
 
-// git commit -m "first commit"
+
 

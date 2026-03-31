@@ -6,6 +6,7 @@ import Products from './component/Products'
 import Navbar from './component/NavBar'
 import Banner from './component/Banner'
 import Rating from './component/Rating'
+import Pricing from './component/Pricing'
 
 // fetch products
 const getProducts = async () => {
@@ -64,8 +65,14 @@ function App() {
       {activeTab === "cart" && (
         <Cart carts={carts} setCarts={setCarts} />
       )}
+
+      <Pricing/>
     </>
   )
 }
 
-export default App
+export default App  
+
+
+
+// git commit -m "first commit"
