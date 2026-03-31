@@ -11,15 +11,15 @@ const Navbar = ({ carts, setActiveTab }) => {
 
       <div className="px-6 md:px-12 py-4 flex items-center justify-between">
 
-        {/* Logo */}
+      {/* logo */}
         <div
           onClick={() => setActiveTab("product")}
-          className="text-2xl font-bold text-purple-600 cursor-pointer"
+         className="items-center"
         >
-          DigiTools
+          <img className="w-30" src="/logo.png" alt="" />
         </div>
 
-        {/* Desktop Menu */}
+       {/* menu */}
         <ul className="hidden md:flex items-center gap-10 text-gray-600 font-medium">
           <li
             onClick={() => setActiveTab("product")}
@@ -44,10 +44,10 @@ const Navbar = ({ carts, setActiveTab }) => {
           </li>
         </ul>
 
-        {/* Right side */}
+      
         <div className="flex items-center gap-4">
 
-          {/* Cart */}
+        
           <div
             onClick={() => setActiveTab("cart")}
             className="relative cursor-pointer text-xl"
@@ -69,7 +69,7 @@ const Navbar = ({ carts, setActiveTab }) => {
             </button>
           </div>
 
-          {/* Hamburger */}
+         {/* mobile menu */}
           <div
             className="md:hidden text-2xl cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -79,7 +79,7 @@ const Navbar = ({ carts, setActiveTab }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+    
       {menuOpen && (
         <div className="md:hidden px-6 pb-4">
           <ul className="flex flex-col gap-4 text-gray-600 font-medium">
@@ -110,7 +110,7 @@ const Navbar = ({ carts, setActiveTab }) => {
           </li>
           </ul>
 
-          {/* Mobile Buttons */}
+        
           <div className="mt-4 flex flex-col gap-3">
             <button className="w-full px-4 py-2 text-gray-600  rounded-full hover:bg-purple-50">
               Login
@@ -127,3 +127,7 @@ const Navbar = ({ carts, setActiveTab }) => {
 };
 
 export default Navbar;
+
+
+// git commit -m "first commit"
+

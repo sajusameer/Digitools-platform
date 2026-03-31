@@ -4,6 +4,8 @@ import './App.css'
 import Cart from './component/Cart'
 import Products from './component/Products'
 import Navbar from './component/NavBar'
+import Banner from './component/Banner'
+import Rating from './component/Rating'
 
 // fetch products
 const getProducts = async () => {
@@ -20,9 +22,11 @@ function App() {
 
   return (
     <>
-      {/* ✅ Navbar */}
+     
       <Navbar carts={carts} setActiveTab={setActiveTab} />
 
+      <Banner/>
+      <Rating/>
       {/* Toggle */}
       <div className="flex justify-center gap-4 my-10">
         <button
