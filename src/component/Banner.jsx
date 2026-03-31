@@ -20,14 +20,15 @@ const Banner = () => {
 
         <h1 className='text-3xl md:text-5xl font-bold mt-4 leading-tight'>
           Supercharge Your <br />
-          <span className='text-purple-600'>
+         
             Digital Workflow
-          </span>
+          
         </h1>
 
         <p className='mt-4 text-gray-600'>
-          Boost productivity with our premium digital tools. 
-          Everything you need to create, design, and grow — all in one place.
+        Access premium AI tools, design assets, templates, and productivity <br />
+          software—all in one place. Start creating faster today <br />
+        Explore Products
         </p>
 
       

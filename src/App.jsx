@@ -7,6 +7,7 @@ import Navbar from './component/NavBar'
 import Banner from './component/Banner'
 import Rating from './component/Rating'
 import Pricing from './component/Pricing'
+import Steps from './component/Steps'
 
 // fetch products
 const getProducts = async () => {
@@ -67,6 +68,7 @@ function App() {
       )}
 
       <Pricing/>
+      <Steps/>
     </>
   )
 }
