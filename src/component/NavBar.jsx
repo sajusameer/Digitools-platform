@@ -16,7 +16,7 @@ const Navbar = ({ carts, setActiveTab }) => {
           onClick={() => setActiveTab("product")}
          className='items-center'
         >
-          <img className="w-30" src="/logo.png" alt="" />
+          <img className="w-35" src="/logo.png" alt="" />
         </div>
 
        {/* menu */}

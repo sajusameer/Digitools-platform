@@ -1,16 +1,31 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Name of your Project
 
-Currently, two official plugins are available:
+Ans: DigiTools Platform - AI Power Tools website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# A little Description
+Ans: Digitools Platform is a modern website that provides a collection of useful digital tools in one place. It is designed to help users improve productivity by accessing different tools easily through a clean and responsive interface. The platform focuses on simplicity, fast performance, and user-friendly design.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Technology that you use
 
-## Expanding the ESLint configuration
+1. React.js
+2. Taiwind CSS
+3. Daisy UI
+4. Vite
+5. Lucide React (Icons)
+6. JavaScript (ES6)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# 3 Features about your project.
+
+1. Modern Responsive Design
+The platform is fully responsive and works smoothly on mobile, tablet, and desktop devices.
+
+
+2. Multiple Tools in One Platform
+Users can access different tools from a single dashboard, making workflow faster and easier.
+
+3. Clean & User-Friendly UI
+Simple navigation, well-structured layout, and attractive design improve overall user experience.

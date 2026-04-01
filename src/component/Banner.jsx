@@ -52,7 +52,7 @@ const Banner = () => {
 
     
       <div className='flex justify-center order-first md:order-last object-contain
-       drop-shadow-sm rounded-xl animate-pulse'>
+       drop-shadow-lg rounded-xl animate-pulse'>
         <img
           src={BannerImg}
           alt="banner"
