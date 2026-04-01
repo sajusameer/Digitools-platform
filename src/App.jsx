@@ -8,6 +8,10 @@ import Banner from './component/Banner'
 import Rating from './component/Rating'
 import Pricing from './component/Pricing'
 import Steps from './component/Steps'
+import Workflow from './component/Workflow'
+import Footer from './component/Footer'
+
+
 
 // fetch products
 const getProducts = async () => {
@@ -69,6 +73,10 @@ function App() {
 
       <Pricing/>
       <Steps/>
+      <Workflow/>
+      <Footer/>
+      
+    
     </>
   )
 }

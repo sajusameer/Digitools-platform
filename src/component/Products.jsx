@@ -11,7 +11,7 @@ const Products = ({ productPromise, carts, setCarts }) => {
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold">Premium Digital Tools</h2>
         <p className="text-gray-500 mt-2">
-          Choose the perfect tools to boost your productivity
+          Choose from our curated collection of premium digital products design <br /> edto boost your productivity and creativity.
         </p>
       </div>
 
